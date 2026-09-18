@@ -17,7 +17,7 @@ func MonthlyRate(annualPercent float64) (float64, error) {
 }
 
 // MonthlyPayment calculates the monthly annuity loan payment.
-// Returns an error if sum or months are invalid, or if rate calculation fails.
+// Returns an error if sum or months are invalid, or if rate calculation fails. PRIVET KAK DELA
 func MonthlyPayment(sum, annualPercent float64, months int) (float64, error) {
 	if sum <= 0 {
 		return 0, fmt.Errorf("loan sum must be positive, got %.2f", sum)
